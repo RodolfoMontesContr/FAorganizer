@@ -1,0 +1,41 @@
+
+.body {
+    background-color:#ccd5ae;
+    color: black;
+    font-size: 25px;
+  }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.carousel {
+  width:640px;
+  height:360px;
+  
+}
+
+.footer {
+  position:absolute;
+  bottom:0;
+  list-style: none;
+  background-color: #fefae0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style-type: none;
+  ;
+}
+
+.header_estilo{
+  background-color: #fefae0;
+  height: 100px;
+}
+.pad1{
+  padding-right: 10px;
+}
+.boton{
+  padding-left: 80px;
+}
