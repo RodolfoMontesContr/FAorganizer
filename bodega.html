@@ -73,52 +73,38 @@
 
  <main >
   <div class="d-flex justify-content-center pt-5">
-    <div class="row">
+    <div class="container">
         <form id="myForm">
-            <label class="pb-3">Nombre</label>
-            <input name="nombre" />
-            <br/>
-            <label class="pb-3">Apellido</label>
-            <input name="apellido" />
-            <br/>
-            <div class="col">
-              <label for="genero" class="pad1 pb-3">Género</label>
-              <input type="radio" name="genero" value="Hombre">Hombre</input>
-              <input type="radio" name="genero" value="Mujer">Mujer</input>
+            <div class="row pb-2">
+            <label class="col-sm-2">Nombre del producto:</label>
+            <input name="nombre" class="col-sm-3"></input>
+          </div>
+          <div class="row pb-2">
+          <label class="col-sm-2">ID Producto:</label>
+          <input name="apellido" class="col-sm-3"></input>
+          </div>
+          <div class="row pb-2">
+            <label class="col-sm-2">Stock:</label>
+            <input name="stock" class="col-sm-3"></input>
             </div>
-            <div class="col">
-              <label for="rut" class="pad1">Rut</label>
-              <input id="rut" name="rut"required>
-            </div>
-            <br/>
-          </form>
-      <form id="formulariocontact">
-        <div class="col">
-          <label for="fnac" class="pb-3">Fecha de nacimiento</label>
-          <input type="date" name="dnac"required></input>
-        </div>
-        <div class="col">
-          <label for="Mail" class="pb-3">Mail</label>
-          <input type="email" name="email"required>
-        </div>
-        <div class="col">
-          <label for="contraseña" class="pb-3">Tipo usuario</label>
-          <input type="tipouser" name="usertype"required>
-        </div>
-        <div class="col">
+          <div class="row pb-2">
+            <label for="fnac" class="col-sm-2">Fecha de inscripción:</label>
+            <input type="date" name="dnac"required class="col-sm-3"></input>
+              </div>
+          <div class="row pb-2"">
           <script src="assets/js/Count.js"></script>
-          <label for="comentario" class="pb-1">Comentario</label>
+          <label for="comentario" class="pb-1">Comentario o indicaciones.</label>
           <br>
           <textarea id="comentario" rows="7" style="width: 500px;" maxlength="250" placeholder="Ingrese su mensaje" name="comentario" onkeypress="textareaLengthCheck(this)" required> </textarea>
           <p id="lblRemainingCount"></p>
         </div>
         <div class="pb-3">
-        <input type="submit" onclick="enviar()" class="button" id="enviar">
-        <input type="reset" onclick="reset()" class="button" id="limpiar">
+          <button onclick='SubForm()' class="btn btn-success">Submit</button>
+        <input type="reset" onclick="reset()" class="btn btn-danger" id="limpiar">
         </div>
       </form>
       
-      <button onclick='SubForm()'>Submit</button>
+      
     </div>
   </div>
 </main>
