@@ -49,16 +49,16 @@
                     <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link active" href="nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link login" href="login.html">Login</a>
+                    <a class="nav-link active" href="login.html">Login</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link login" href="registrarse.html">Registrarse</a>
+                    <a class="nav-link active" href="registrarse.html">Registrarse</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link login" href="bodega.html">Inventario Bodega</a>
+                    <a class="nav-link active" href="bodega.html">Inventario Bodega</a>
                   </li>
                   <li> <!--Modo oscuro-->
                     <input type="image" src="assets/Imágenes/Icons/Moon.png" width="35px" onclick="DarkMode()">
@@ -93,18 +93,15 @@
               </div>
           <div class="row pb-2"">
           <script src="assets/js/Count.js"></script>
-          <label for="comentario" class="pb-1">Comentario o indicaciones.</label>
-          <br>
-          <textarea id="comentario" rows="7" style="width: 500px;" maxlength="250" placeholder="Ingrese su mensaje" name="comentario" onkeypress="textareaLengthCheck(this)" required> </textarea>
+          <label for="comentario" class="col-sm-2">Comentario o indicaciones.</label>
+          <textarea id="comentario" rows="7" class="col-sm-4" placeholder="Ingrese su mensaje" name="comentario" onkeypress="textareaLengthCheck(this)" required> </textarea>
           <p id="lblRemainingCount"></p>
         </div>
-        <div class="pb-3">
-          <button onclick='SubForm()' class="btn btn-success">Submit</button>
-        <input type="reset" onclick="reset()" class="btn btn-danger" id="limpiar">
-        </div>
+        <div class="col align-content-center">
+          <input type="reset" onclick="reset()" class="btn btn-danger offset-md-2" id="limpiar">
+          <button onclick='SubForm()' class="btn btn-primary offset-md-1">Enviar</button>
+          </div>
       </form>
-      
-      
     </div>
   </div>
 </main>
